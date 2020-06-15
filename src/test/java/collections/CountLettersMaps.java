@@ -1,5 +1,6 @@
 package collections;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,6 +24,7 @@ public class CountLettersMaps {
                 map.put(str.charAt(i), 0);
             }
                 map.put(str.charAt(i), map.get(str.charAt(i)) + 1);
+
         }
 
         System.out.println(map); //{p=2, a=1, s=1, e=1, l=1}

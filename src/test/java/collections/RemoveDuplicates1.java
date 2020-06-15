@@ -16,15 +16,19 @@ public class RemoveDuplicates1 {
 
     public static void uniqueChar(String str) {
 
-        System.out.println("str = " + str);
+        System.out.println("str = " + str);  //str = AAABBBCCCD
         String[] strArr = str.split("");
+        System.out.println("strArr = " + Arrays.toString(strArr));
+
         String str2 = "";
+
         Set<String> unique = new HashSet<String>(Arrays.asList(strArr));
-        System.out.println("unique = " + unique);
+        System.out.println("unique = " + unique);  //unique = [A, B, C, D]
+
         for (String s : unique) {
             str2 += s;
         }
-        System.out.println("str2 = " + str2);
+        System.out.println("str2 = " + str2);  //str2 = ABCD
     }
 
 }

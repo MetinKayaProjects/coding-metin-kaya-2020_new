@@ -37,7 +37,7 @@ public class SortEachPart_NumsAndLetters {
                 // the substring part each to be sorted
 
                 if(i == str.length()-1 || !Character.isLetter(str.charAt(i+1))){
-                    sorted += sortSubstring(each); // break the each String and sort
+                    sorted += sortSubstring(each); // call the sortSubstring(each) method, break the each String and sort
                     // the characters
                     each = "";  // reset each for the digits
                 }

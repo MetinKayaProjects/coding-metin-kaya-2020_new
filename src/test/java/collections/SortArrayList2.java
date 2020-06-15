@@ -16,6 +16,7 @@ public class SortArrayList2 {
 
     }
     public static void sortList2(ArrayList<Integer> list){
+
         int[] arr = new int[list.size()];
 
         for (int i=0; i < list.size(); i++){

@@ -13,7 +13,7 @@ public class SortArrayList {
     public static void main(String[] args) {
 
         ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(1, 4, 4, 5, 2, 3, 1));
-        System.out.println("method-1: "+ sortList(list));
+        System.out.println("sortedNums: "+ sortList(list));
 
     }
 
