@@ -35,9 +35,10 @@ public class BalancedParanthensies_Stack {
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (c == '[' || c == '(' || c == '{') {
-                stack.push(c);
+                stack.push(c);  //stac'e c character'lerini ekledi. c=[ [, (, { ]
+                //System.out.println("stack = "+ i+" - " + stack);
             } else if (c == ']') {
-                if (stack.isEmpty() || stack.pop() != '[') {
+                if (stack.isEmpty() || stack.pop() != '[') {  //stack.pop(); son elemani return eder ve listeden de remove eder
                     return false;
                 }
             } else if (c == ')') {
