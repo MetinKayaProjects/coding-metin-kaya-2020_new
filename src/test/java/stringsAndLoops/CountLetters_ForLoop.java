@@ -18,7 +18,8 @@ v – 1
             if (!check.contains(str.charAt(i) + "")) {
                 int count = 0;
                 for (int j = 0; j < str.length(); j++) {
-                    if (str.charAt(i) == str.charAt(j)) count++;
+                    if (str.charAt(i) == str.charAt(j))
+                        count++;
                 }
 
                 System.out.println(str.charAt(i) + " - " + count);

@@ -23,7 +23,7 @@ public class CountLettersMaps {
             if (!map.containsKey(str.charAt(i))) {
                 map.put(str.charAt(i), 0);
             }
-                map.put(str.charAt(i), map.get(str.charAt(i)) + 1);
+                map.put(str.charAt(i), map.get(str.charAt(i))  + 1);
 
         }
 

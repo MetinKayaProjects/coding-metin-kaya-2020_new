@@ -1,6 +1,8 @@
 package collections;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /*
     Task - 4  day6
@@ -11,28 +13,46 @@ import java.util.Arrays;
      */
 public class UniqueCharactersByArray {
     public static void main(String[] args) {
-        unique("AAABCCCDDEFFS");
-    }
-
-    public static void unique(String str) {
+        String str = "AAABCCCDDEFFS";
         System.out.println("str = " + str);
 
         String[] strArr = str.split("");
         System.out.println("Arrays.toString(strArr) = " + Arrays.toString(strArr));
 
-        String strUnique = "";
-        for (int i = 0; i < strArr.length; i++) {
-            int count = 0;
-            for (int j = 0; j < strArr.length; j++) {
-                if (strArr[i] == strArr[j]) {
-                    count++;
+        List<String> myList = new ArrayList<>(Arrays.asList(strArr));
+        System.out.println("myList = " + myList);
+        List<String> unique = new ArrayList<>();
 
+//        String strUnique = "";
+        for (int i = 0; i < myList.size(); i++) {
+            int count = 0;
+            for (int j = 0; j < myList.size(); j++) {
+                if (myList.get(i) == myList.get(j) && i!=j) {
+                    count++;
                 }
             }
             if (count == 1) {
-                strUnique += strArr[i];
+                unique.add(myList.get(i));
             }
         }
-        System.out.println("strUnique = " + strUnique);
+        System.out.println("Unique = " + unique);
     }
+
+//    public static void unique(String str) {
+
+
+//        for (int i = 0; i < strArr.length; i++) {
+//            int count = 0;
+//            for (int j = 0; j < strArr.length; j++) {
+//                if (strArr[i] == strArr[j]) {
+//                    count++;
+//
+//                }
+//            }
+//            if (count == 1) {
+//                strUnique += strArr[i];
+//            }
+//        }
+//        System.out.println("strUnique = " + strUnique);
+//    }
 }

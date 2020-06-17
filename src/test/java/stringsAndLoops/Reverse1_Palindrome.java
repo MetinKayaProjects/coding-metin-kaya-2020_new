@@ -8,10 +8,13 @@ public class Reverse1_Palindrome {
     public static void main(String[] args) {
 
         String a = "civic";
-        System.out.println(isPalindrome(a));   //true
-
         String b = "java";
+        String c = "a";
+        String d = "";
+        System.out.println(isPalindrome("civic"));   //true
         System.out.println(isPalindrome(b));   //false
+        System.out.println(isPalindrome(c));
+        System.out.println(isPalindrome(d));
     }
 
     public static Boolean isPalindrome(String word) {
@@ -21,6 +24,13 @@ public class Reverse1_Palindrome {
         }
         System.out.println("word: "+ word);
         System.out.println("reversed: " + reversed);
-        return (word.equalsIgnoreCase(reversed)) ? true : false;
+        //return (word.equalsIgnoreCase(reversed)) ? true : false;
+        if(word.equalsIgnoreCase(reversed)){
+            return true;
+        }else{
+            return false;
+        }
+
+
     }
 }

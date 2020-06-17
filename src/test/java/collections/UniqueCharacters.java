@@ -23,7 +23,6 @@ public class UniqueCharacters {
         List<String> list = new ArrayList<String>(Arrays.asList(strArr));
         for (String s:list) {
             int count = Collections.frequency(list,s);
-
             if (count == 1){
                 unique += s;
             }
