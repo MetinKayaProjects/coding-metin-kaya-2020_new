@@ -21,9 +21,12 @@ public class ArraysEx {
         String[] myList = new String[3];
         myList[0] = "Bursa";
         myList[1] = "Izmir";
-        myList[2] = "test";
+        myList[2] = "Ankara";
 
-        System.out.println("myList = " + Arrays.toString(myList));//myList = [Bursa, Izmir, test]
+        System.out.println("myList = " + Arrays.toString(myList));//myList = [Bursa, Izmir, Ankara]
         System.out.println(myList[0]);  //Bursa
+
+        Arrays.sort(myList);
+        System.out.println("myList = " + Arrays.toString(myList)); //myList = [Ankara, Bursa, Izmir]
     }
 }

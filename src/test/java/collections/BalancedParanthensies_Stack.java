@@ -18,19 +18,19 @@ import java.util.Stack;
  */
 public class BalancedParanthensies_Stack {
     public static void main(String[] args) {
-        System.out.println("a: " + balancedParenthensies("{([])}"));
-        System.out.println("b: " + balancedParenthensies("{[]}"));
-        System.out.println("c: " + balancedParenthensies("{({)}"));
-        System.out.println("d: " + balancedParenthensies("{({)}"));
-        System.out.println("e: " + balancedParenthensies("{)]"));
-        System.out.println("f: " + balancedParenthensies("[]([){}"));
+        System.out.println("a: " + isBalanced("{([])}"));
+        System.out.println("b: " + isBalanced("{[]}"));
+        System.out.println("c: " + isBalanced("{({)}"));
+        System.out.println("d: " + isBalanced("{({)}"));
+        System.out.println("e: " + isBalanced("{)]"));
+        System.out.println("f: " + isBalanced("[]([){}"));
 
-        System.out.println("g: " + balancedParenthensies("{(a,b)}"));
-        System.out.println("h: " + balancedParenthensies("{(a},b)"));
-        System.out.println("i: " + balancedParenthensies("{)(a,b}"));
+        System.out.println("g: " + isBalanced("{(a,b)}"));
+        System.out.println("h: " + isBalanced("{(a},b)"));
+        System.out.println("i: " + isBalanced("{)(a,b}"));
     }
 
-    public static boolean balancedParenthensies(String s) {
+    public static Boolean isBalanced(String s) {
         Stack<Character> stack = new Stack<Character>();
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);

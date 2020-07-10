@@ -19,14 +19,16 @@ public class SumDigits {
 
     public static int sumDigits(String str) {
         int sum = 0;
-        String num = "";
+        String numStr = "";
+
         for (int i = 0; i < str.length(); i++) {
+
             if (Character.isDigit(str.charAt(i))) {
-                num += str.charAt(i);
+                numStr += str.charAt(i);  //String oldugu icin toplamaz, 45 olarak yazar
 
                 if (i == str.length() - 1 || !Character.isDigit(str.charAt(i + 1))) {
-                    sum += Integer.parseInt(num);
-                    num = "";
+                    sum += Integer.parseInt(numStr);   //String 45'i int 45'e convert ettik
+                    numStr = "";
                 }
             }
         }

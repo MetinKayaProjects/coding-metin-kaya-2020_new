@@ -10,7 +10,7 @@ public class StackEx {
         stack.add("a");
         System.out.println("stack = " + stack); // [a]
         stack.add("Steve");
-        stack.push("Horse");
+        stack.push("Horse"); //push() = add()
         System.out.println("stack = " + stack);  // [a, Steve, Horse]
         stack.push("b");
         stack.push("c");  //listeye add yapar

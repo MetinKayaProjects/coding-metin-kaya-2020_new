@@ -5,8 +5,10 @@ package stringsAndLoops;
         */
 public class ReverseNumber_PalindromeNumber {
     public static void main(String[] args) {
+
         System.out.println(palindrome(1203021));
     }
+
     public static boolean palindrome(long num){
         long remain = num;  //1203021
         long reverseNum =0; //1203021

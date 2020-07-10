@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Anagram_sortArray {
     public static void main(String[] args) {
         String a="listen";
-        String b="silente";
+        String b="silent";
 
         if (a.length() !=b.length()){
             System.out.println("NOT Anagram");
