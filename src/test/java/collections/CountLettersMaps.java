@@ -23,15 +23,16 @@ public class CountLettersMaps {
             if (!map.containsKey(str.charAt(i))) {
                 map.put(str.charAt(i), 0);
             }
-                map.put(str.charAt(i), map.get(str.charAt(i))  + 1);
+            map.put(str.charAt(i), map.get(str.charAt(i)) + 1);
 
         }
 
         System.out.println(map); //{p=2, a=1, s=1, e=1, l=1}
 
-       // System.out.println(map.keySet());//sadece key'leri yazdirir    //[p, a, s, e, l]
+//        System.out.println(map.keySet());//sadece key'leri yazdirir    //[p, a, s, e, l]
         System.out.println(map.entrySet()); //[p=2, a=1, s=1, e=1, l=1]
 
+        ////////   OR    ////////////////
         System.out.println("or");
 
         for (Character key : map.keySet()) {
@@ -39,5 +40,21 @@ public class CountLettersMaps {
             System.out.println("Value: " + map.get(key));
             System.out.println();
         }
+        /*
+        Key: p
+        Value: 2
+
+        Key: a
+        Value: 1
+
+        Key: s
+        Value: 1
+
+        Key: e
+        Value: 1
+
+        Key: l
+        Value: 1
+         */
     }
 }
