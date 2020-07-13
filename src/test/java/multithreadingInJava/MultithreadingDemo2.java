@@ -2,8 +2,7 @@ package multithreadingInJava;
 // Java code for thread creation by implementing
 // the Runnable Interface
 class MultithreadingDemo2 implements Runnable {
-    public void run()
-    {
+    public void run() {
         try
         {
             // Displaying the thread that is running

@@ -19,7 +19,7 @@ public class Apple_PasswordValidation {
 
     }
 
-    public static Boolean isValidPassword(String password) {
+    public static boolean isValidPassword(String password) {
         boolean digit = password.matches(".*[0-9].*");
         boolean chars = password.matches(".*[@, #, $].*");
         boolean length = password.length() >= 6 && password.length() <= 20;
