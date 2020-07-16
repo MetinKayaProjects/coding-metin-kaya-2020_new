@@ -1,4 +1,4 @@
-package interviewQuestions;
+package interviewQuestions.Apple;
 
 /*
 Write a code to validate the password using the following rules:

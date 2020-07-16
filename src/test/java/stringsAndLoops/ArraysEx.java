@@ -23,6 +23,8 @@ public class ArraysEx {
         myList[1] = "Izmir";
         myList[2] = "Ankara";
 
+        System.out.println("size = " + myList.length);
+
         System.out.println("myList = " + Arrays.toString(myList));//myList = [Bursa, Izmir, Ankara]
         System.out.println(myList[0]);  //Bursa
 

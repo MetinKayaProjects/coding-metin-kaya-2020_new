@@ -8,8 +8,8 @@ numbers which are a multiple of both 3 and 5, print "FINRA" instead of the numbe
 public class Finra {
     public static void main(String[] args) {
 
-//        finra1();
-        finra2();
+        finra1();
+//        finra2();
     }
 
     public static void finra1() {
@@ -17,6 +17,7 @@ public class Finra {
             String print = "";
             if (i % 3 == 0) print += "FIN";
             if (i % 5 == 0) print += "RA";
+
             if (print.isEmpty()) {
                 System.out.println(i);
             } else System.out.println(print);
