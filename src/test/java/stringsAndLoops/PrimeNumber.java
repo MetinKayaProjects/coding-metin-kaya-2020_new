@@ -8,6 +8,7 @@ package stringsAndLoops;
         */
 public class PrimeNumber {
     public static void main(String[] args) {
+
         allPrimeNumbers(100);
     }
 
