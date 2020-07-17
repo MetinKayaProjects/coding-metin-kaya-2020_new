@@ -6,10 +6,10 @@ import java.util.Queue;
 public class SortEachPart2_Queue {
 
     public static void main(String[] args) {
-        String s = sortEach("DC501GCCCA098911");
+        String s = sortEach("DC501GCCCA098911");  // --- > CD051ACCGC011998
         System.out.println(s);
 
-        // dc 501 gcca
+        // DC 501 GCCCA 0989111   -- > CD 051 ACCGC 011998
     }
 
 

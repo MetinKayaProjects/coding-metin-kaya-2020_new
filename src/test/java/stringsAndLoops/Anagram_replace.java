@@ -1,6 +1,6 @@
 package stringsAndLoops;
 
-public class Anagram3_replace {
+public class Anagram_replace {
     /*
 Given two Strings determine if they are Anagrams -> Are built of the same characters
  */

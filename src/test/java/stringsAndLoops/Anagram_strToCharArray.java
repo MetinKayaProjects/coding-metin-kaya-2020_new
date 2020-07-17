@@ -1,6 +1,6 @@
 package stringsAndLoops;
 
-public class Anagram2_strToCharArray {
+public class Anagram_strToCharArray {
 
     public static void main(String[] args) {
         System.out.println(isAnagram("listen", "Silent"));

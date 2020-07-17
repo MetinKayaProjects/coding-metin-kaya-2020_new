@@ -6,7 +6,7 @@ package stringsAndLoops;
        all the prime number from 2 to that given number
 
         */
-public class PrimeNumber {
+public class PrimeNumbersUntilN {
     public static void main(String[] args) {
 
         allPrimeNumbers(100);
