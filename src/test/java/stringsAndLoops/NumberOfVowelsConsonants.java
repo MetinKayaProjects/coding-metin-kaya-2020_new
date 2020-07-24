@@ -11,6 +11,7 @@ public class NumberOfVowelsConsonants {
     }
 
     public static String numbers(String word) {
+
         List<Character> vowels = Arrays.asList('a', 'e', 'i', 'o', 'u');
         List<Character> consonant = new ArrayList<>();
         int countVowels = 0;
