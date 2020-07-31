@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 //Write a method; argumants an integer list (or array) and an int num.
-// if sum up of two nums in this list is equals to the num return true
+// print them out if sum up of two nums in this list is equals to the num
 public class SumUpInAList {
     public static void main(String[] args) {
         int[] nums = new int[]{1, 2, 3, 4, 5, 6};
