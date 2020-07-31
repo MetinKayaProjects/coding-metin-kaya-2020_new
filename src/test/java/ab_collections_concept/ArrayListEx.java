@@ -24,6 +24,7 @@ public class ArrayListEx {
         System.out.println("numbers = " + numbers);
 
 
+
 //SORT SORT SORT
 
         Collections.sort(numbers);

@@ -8,9 +8,6 @@ import java.util.*;
 //DIKKAT CALISMIYOR. NEDEN?
 
 
-
-
-
 public class CountWordsMap {
     public static void main(String[] args) {
 
@@ -33,9 +30,9 @@ public class CountWordsMap {
         System.out.println("myMap = " + myMap);
         System.out.println("myMap.entrySet() = " + myMap.entrySet());
 
-//        myMap.forEach((word, count) -> {
-//            System.out.println(word + ": " + count);
-//        });
+        myMap.forEach((word, count) -> {
+            System.out.print(word + ": " + count + ";   ");
+        });
 
     }
 }

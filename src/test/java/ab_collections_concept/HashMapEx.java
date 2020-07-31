@@ -19,5 +19,9 @@ public class HashMapEx {
         System.out.println(map.containsKey(1));  //true
         System.out.println(map.get(1));         //one
 
+        System.out.println(map.values());   //[null, one, null, three]
+
+//        for (map.forEach();)
+
     }
 }
