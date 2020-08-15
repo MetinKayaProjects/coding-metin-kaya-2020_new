@@ -1,5 +1,7 @@
 package collections;
 
+import sun.lwawt.macosx.CSystemTray;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -9,15 +11,20 @@ Task - 2
 Do not sure any ready sort method.
 -> How will you do the opposite direction (l -> s)?
  */
-public class SortArrayList {
+public class SortArrayList_smallestNum {
     public static void main(String[] args) {
 
-        ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(1, 4, 4, 5, 2, 3, 1));
-        System.out.println("sortedNums: "+ sortList(list));
+        try {
+            ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(1, 4, 4, 5, 2, 3, -1));
+            findSmallest(list);
+        }catch(Exception e) {
+        System.exit(0);
+
+        }
 
     }
 
-    public static ArrayList<Integer> sortList(ArrayList<Integer> list) {
+    public static void findSmallest(ArrayList<Integer> list) {
 
         for (int i = 0; i < list.size(); i++) {
 
@@ -33,6 +40,7 @@ public class SortArrayList {
         int smalest = list.get(0);
         int secondSmallest = list.get(1);
 
-        return list;
+        System.out.println("smalest = " + smalest);
+        System.out.println("secondSmallest = " + secondSmallest);
     }
 }

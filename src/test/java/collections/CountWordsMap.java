@@ -28,11 +28,13 @@ public class CountWordsMap {
 
         }
         System.out.println("myMap = " + myMap);
-        System.out.println("myMap.entrySet() = " + myMap.entrySet());
+        //BY ENTRYSET() METHOD
+//       System.out.println("myMap.entrySet() = " + myMap.entrySet());
 
-        myMap.forEach((word, count) -> {
-            System.out.print(word + ": " + count + ";   ");
-        });
+        //BY LAMBDA
+//        myMap.forEach((word, count) -> {
+//            System.out.print(word + ": " + count + ";   ");
+//        });
 
     }
 }

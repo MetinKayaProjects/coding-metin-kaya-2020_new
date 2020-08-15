@@ -4,6 +4,7 @@ public class Test {
     String name;
     int age;
     public void printName(){
+
         System.out.println("name = " + name);
     }
     public int getAge(){
