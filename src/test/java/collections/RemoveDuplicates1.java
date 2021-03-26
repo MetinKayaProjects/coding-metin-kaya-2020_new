@@ -11,6 +11,7 @@ import java.util.Set;
     */
 public class RemoveDuplicates1 {
     public static void main(String[] args) {
+
         uniqueChar("AAABBBCCCD");
     }
 

@@ -7,6 +7,7 @@ package collections;
            */
 public class RemoveDuplicates2 {
     public static void main(String[] args) {
+
         uniqueChar("AAABBBCCCD");
     }
 

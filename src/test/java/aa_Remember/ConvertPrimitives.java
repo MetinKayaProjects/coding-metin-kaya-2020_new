@@ -13,6 +13,8 @@ public class ConvertPrimitives {
         System.out.println("num2 = " + num2);
         Double numD = Double.parseDouble(strNum);
         System.out.println("numD = " + numD);
+        Double numD2 = Double.valueOf(strNum);
+        System.out.println("numD2 = " + numD2);
 
 //INT TO STRING
         int number1 = 12;
@@ -28,10 +30,15 @@ public class ConvertPrimitives {
 //FLOAT to STRING
         float f=35f;
         String sF=Float.toString(f);
+        System.out.println("sF = " + sF);
+        String sF2 = String.valueOf(f);
+        System.out.println("sF2 = " + sF2);
 
 //STRING to FLOAT
         float f2=Float.parseFloat(sF);
+        System.out.println("f2 = " + f2);
         float f3 = Float.valueOf(sF);
+        System.out.println("f3 = " + f3);
 
     }
 }

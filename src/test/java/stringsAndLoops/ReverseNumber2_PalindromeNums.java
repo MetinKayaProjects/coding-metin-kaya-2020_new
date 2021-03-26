@@ -5,6 +5,7 @@ package stringsAndLoops;
         */
 public class ReverseNumber2_PalindromeNums {
     public static void main(String[] args) {
+
         System.out.println(palindrome(1203021));
     }
     public static Boolean palindrome(int num){
