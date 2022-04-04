@@ -13,7 +13,6 @@ public class Factorial {
             num -= 2;
             System.out.println("num = " + num);
             System.out.println("sum = " + sum);
-
         }
         System.out.println("factorial = " + sum);
 
