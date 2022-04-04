@@ -12,6 +12,7 @@ public class CollectionsSortMethod {
         ArrayList<String> myList2 = new ArrayList<String>(Arrays.asList("a", "B", "Ali", "Ceyhan"));
 
 //  Collections.sort(myList2)
+
         Collections.sort(myList2);
     }
 }
