@@ -11,8 +11,8 @@ public class Factorial {
         while (num > 1){  // it should be larger than 1, since in the method
             sum = sum * num * (num-1);  //we imlement num*(num-1) -- > num-1=0 olmamali
             num -= 2;
-//            System.out.println("num = " + num);
-//            System.out.println("sum = " + sum);
+            System.out.println("num = " + num);
+            System.out.println("sum = " + sum);
 
         }
         System.out.println("factorial = " + sum);
