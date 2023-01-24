@@ -17,6 +17,6 @@ public class Test {
         t.name = "Arthur";
         int a= t.getAge();
         t.printName();
-        System.out.println("age = " + a);
+        System.out.println(t.name + "'s age is " + a +".");
     }
 }

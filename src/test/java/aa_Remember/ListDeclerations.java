@@ -11,6 +11,7 @@ public class ListDeclerations {
         //  List Decleration
         ArrayList<Object> myList = new ArrayList<Object>(Arrays.asList(1, 3, 7, "Ali", "Veli"));
         System.out.println("myList = " + myList);
+        System.out.println("myList size = " + myList.size());
 
         ArrayList<String> myList2 = new ArrayList<String>(Arrays.asList("a", "B", "Ali", "Ceyhan"));
         System.out.println("myList2 = " + myList2);

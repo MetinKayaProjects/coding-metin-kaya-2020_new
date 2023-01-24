@@ -25,7 +25,7 @@ package leetCode;
 
 import java.util.Arrays;
 
-public class TwoSumEqualTarget {
+public class ArrayTwoSumEqualTarget {
 //    public static int[] twoSum(int[] nums, int target) {
 //        int[] outputs = new int[2];
 //        for (int i = 0; i < nums.length-1 ; i++) {

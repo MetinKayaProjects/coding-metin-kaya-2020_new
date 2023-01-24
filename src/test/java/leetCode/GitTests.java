@@ -1,4 +1,4 @@
-package gitHub;
+package leetCode;
 
 public class GitTests {
     public static void main(String[] args) {
