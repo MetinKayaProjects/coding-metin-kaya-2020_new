@@ -9,9 +9,10 @@ public class CollectionsSortMethod {
 
         ArrayList<Integer> myList = new ArrayList<Integer>();
 
-        ArrayList<String> myList2 = new ArrayList<String>(Arrays.asList("a", "B", "Ali", "Ceyhan"));
+        ArrayList<String> myList2 = new ArrayList<String>(Arrays.asList("A", "B", "Ali", "Ceyhan"));
 
         //  Collections.sort(myList2)
         Collections.sort(myList2);
+        System.out.println("myList2 = " + myList2);
     }
 }

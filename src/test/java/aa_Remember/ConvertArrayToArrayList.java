@@ -8,6 +8,7 @@ import java.util.List;
 public class ConvertArrayToArrayList {
     public static void main(String[] args) {
         String[] strArray = {"a", "b", "c", "d", "e"};
+        System.out.println("Arrays.toString(strArray) = " + Arrays.toString(strArray));
 
 //        Method-1 : Arrays.asList(strArray);
 //        List<String> list = new ArrayList<String>(Arrays.asList(strArray));

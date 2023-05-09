@@ -6,7 +6,10 @@ public class RandomExp {
     public static void main(String[] args) {
         // RANDOM
         Random random = new Random();
+        int guess = random.nextInt(99);
         int guess2 = random.nextInt();
-        int guess = random.nextInt(101);
+
+        System.out.println("guess = " + guess);
+        System.out.println("guess2 = " + guess2);
     }
 }
