@@ -27,5 +27,6 @@ public class ArraysSortWithoutSortMethod {
             }
         }
         System.out.println("sortedNums = " + Arrays.toString(nums));
+        System.out.println("Max number in the array: " + nums[nums.length-1]);
     }
 }

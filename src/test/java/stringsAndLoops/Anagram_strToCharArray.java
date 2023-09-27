@@ -28,8 +28,9 @@ public class Anagram_strToCharArray {
         for (int c2 : chars2) {
             sumstr2 += c2;
         }
-//        System.out.println("sumstr1 = " + sumstr1);
-//        System.out.println("sumstr2 = " + sumstr2);
+
+        System.out.println("sumstr1 = " + sumstr1);
+        System.out.println("sumstr2 = " + sumstr2);
 
         return (sumstr1 == sumstr2) ? true : false;
     }

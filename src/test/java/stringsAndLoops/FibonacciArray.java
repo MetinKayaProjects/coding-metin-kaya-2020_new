@@ -16,20 +16,23 @@ import java.util.Arrays;
 public class FibonacciArray {
     public static void main(String[] args) {
 
-        fibonacci2(9);
+        fibonacci2(8);
     }
 
     public static void fibonacci2(int limit) {
-        int a = 0;
-        int b = 1;
-        int[] fn = new int[limit];
-        fn[0] = 0;
-        fn[1] = 1;
 
-        for (int i = 2; i < limit; i++) {
-            fn[i] = fn[i - 2] + fn[i - 1];
+        if (limit < 2){
+            System.out.println("limit should be larger than [" + limit + "]");
+        }else {
+            int[] fn = new int[limit];
+            fn[0] = 0;
+            fn[1] = 1;
+
+            for (int i = 2; i < limit; i++) {
+                fn[i] = fn[i - 2] + fn[i - 1];
+            }
+            System.out.println("fibonacci: " + Arrays.toString(fn));
+
         }
-        System.out.println("finacci: " + Arrays.toString(fn));
-
     }
 }

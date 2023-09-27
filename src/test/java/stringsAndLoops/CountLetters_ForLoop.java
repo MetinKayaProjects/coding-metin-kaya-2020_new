@@ -10,7 +10,7 @@ v – 1
  */
     public static void main(String[] args) {
 
-        String str = "java";
+        String str = "java is my favorite program";
         String check = "";
 
         for (int i = 0; i < str.length(); i++) {
@@ -22,8 +22,10 @@ v – 1
                         count++;
                 }
 
-                System.out.println(str.charAt(i) + " - " + count);
-                check += str.charAt(i);
+                if(count > 1) { // print the letter if it is repeated more than 1
+                    System.out.println(str.charAt(i) + " - " + count);
+                    check += str.charAt(i);
+                }
             }
         }
     }

@@ -29,5 +29,11 @@ public class ConvertArrayToArrayList {
         }
         System.out.println("list - 3 = " + list3);
 
+        List<String> list4 = new ArrayList<>();
+        for (int i=0; i < strArray.length; i++){
+            list4.add(strArray[i]);
+        }
+        System.out.println("list - 4 = " + list4);
+
     }
 }

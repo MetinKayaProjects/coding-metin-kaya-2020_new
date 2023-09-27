@@ -17,7 +17,7 @@ public class ArrayListEx {
 
         System.out.println("list = " + list);  //list = [0, a, b, c, c, null]   buradaki 0 int degil, String
 
-       ArrayList<String> list2= new java.util.ArrayList<String>(Arrays.asList("Ali", "x", "y"));
+       ArrayList<String> list2= new ArrayList<String>(Arrays.asList("Ali", "x", "y"));
        System.out.println("list2 = " + list2); //list2 = [Ali, x, y]
 
         ArrayList<Integer> numbers = new ArrayList<Integer>(Arrays.asList(3,5,1,87,45,101,20));

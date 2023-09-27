@@ -1,7 +1,5 @@
 package collections;
 
-import sun.lwawt.macosx.CSystemTray;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -15,7 +13,7 @@ public class SortArrayList_smallestNum {
     public static void main(String[] args) {
 
         try {
-            ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(1, 4, 4, 5, 2, 3, -1));
+            ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(1, 4, 4, 5, -7, 2, 3, -1));
             findSmallest(list);
         }catch(Exception e) {
         System.exit(0);
