@@ -12,7 +12,7 @@ Do not sure any ready sort method.
 public class SortArrayList {
     public static void main(String[] args) {
 
-        ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(1, 4, 4, 5, 2, 3, 1));
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 4, 4, 5, 2, 3, 7));
         System.out.println("sortedNums: "+ sortList(list));
 
     }
@@ -31,7 +31,9 @@ public class SortArrayList {
             }
         }
         int smalest = list.get(0);
+        System.out.println("smalest = " + smalest);
         int secondSmallest = list.get(1);
+        System.out.println("secondSmallest = " + secondSmallest);
 
         return list;
     }
