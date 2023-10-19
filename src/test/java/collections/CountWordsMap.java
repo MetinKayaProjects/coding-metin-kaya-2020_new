@@ -18,6 +18,7 @@ public class CountWordsMap {
         str = str.replace(".", "").replace(",","");
         String[] strArr = str.split(" ");
         System.out.println("strArr = " + Arrays.toString(strArr));
+        System.out.println("strArr.length = " + strArr.length);
 
         Map<String, Integer> myMap = new HashMap<String, Integer>();
         for (int i = 0; i < strArr.length; i++) {
@@ -30,11 +31,26 @@ public class CountWordsMap {
         System.out.println("myMap = " + myMap);
         //BY ENTRYSET() METHOD
 //       System.out.println("myMap.entrySet() = " + myMap.entrySet());
+//       System.out.println("myMap.entrySet() = " + myMap.keySet());
 
         //BY LAMBDA
 //        myMap.forEach((word, count) -> {
 //            System.out.print(word + ": " + count + ";   ");
 //        });
+//
+        System.out.println("myMap.keySet() = " + myMap.keySet());
 
+        int total = 0;
+        for (String key : myMap.keySet()) {
+//            System.out.println("Key: " + key);
+//            System.out.println("Value: " + myMap.get(key));
+//            System.out.println();
+           total += myMap.get(key);
+        }
+        System.out.println("total = " + total);
+        Boolean verify = (total == strArr.length) ? true : false;
+//
+        System.out.println("verify = " + verify);
+        System.out.println("myMap.size() = " + myMap.size());
     }
 }
