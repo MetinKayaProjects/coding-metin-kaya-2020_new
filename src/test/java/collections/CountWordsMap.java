@@ -40,6 +40,8 @@ public class CountWordsMap {
 //
         System.out.println("myMap.keySet() = " + myMap.keySet());
 
+        // verify that strArr size is equal to total value of the map:
+        System.out.println("verify that strArr size is equal to total value of the map:\n");
         int total = 0;
         for (String key : myMap.keySet()) {
 //            System.out.println("Key: " + key);
