@@ -14,13 +14,19 @@ public class ReplaceNumWithTwoNumsInList {
 
     public static void main(String[] args) {
         List<Integer> numList = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 0));
-        int num1 = 6;
-        int num2 = 10;
-        int num3 = 15;
+//        List<Integer> numList = new ArrayList<>(Arrays.asList(0, 3, 2, 7, 1, 6, 3, 4, 5, 6, 7, 8, 9));
+        List<Integer> numList2 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 6, 9, 0));
+//        List<Integer> numList2 = new ArrayList<>(Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 6, 9));
+        int oldNum = 6;
+        int oldNum2 = 6;
+//
+        int newNum1 = 10;
+        int newNum2 = 15;
 
 
 
-        replaceNumWithTwoNums(numList, num1, num2, num3);
+        replaceNumWithTwoNums(numList, oldNum, newNum1, newNum2);
+        replaceNumWithTwoNums(numList2, oldNum2, newNum1, newNum2);
     }
 
     private static void replaceNumWithTwoNums(List<Integer> nums1, int num1, int num2, int num3) {
@@ -34,6 +40,6 @@ public class ReplaceNumWithTwoNumsInList {
                 nums1.add(i + 1, num3);
             }
         }
-        System.out.println("nums1 = " + nums1);
+        System.out.println("numsList = " + nums1);
     }
 }
