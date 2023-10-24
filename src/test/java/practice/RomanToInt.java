@@ -54,7 +54,7 @@ public class RomanToInt {
     public static void main(String[] args) {
 
         String str = "III";
-        String str1 = "VI";
+        String str1 = "X";
         String str2 = "MCMXCIV";
         String str3 = "A";
 
@@ -69,7 +69,7 @@ public class RomanToInt {
         System.out.println("romanToInt2(str) = " + romanToInt2(str));
         System.out.println("romanToInt2(str1) = " + romanToInt2(str1));
         System.out.println("romanToInt2(str2) = " + romanToInt2(str2));
-//        System.out.println("romanToInt2(str3) = " + romanToInt2(str3));
+        System.out.println("romanToInt2(str3) = " + romanToInt2(str3));
     }
 
 
@@ -90,8 +90,7 @@ public class RomanToInt {
                 return 0;
             }
         }
-        // III
-        // MCMXCIV
+
 
         int result = 0;
         int prevValue = 0;
@@ -122,11 +121,11 @@ public class RomanToInt {
         mapList.put('M', 1000);
 
 
-//        for (int i = 0; i < s.length(); i++) {
-//            if (!mapList.containsKey(s.charAt(i))) {
-//                return 0;
-//            }
-//        }
+        for (int i = 0; i < s.length(); i++) {
+            if (!mapList.containsKey(s.charAt(i))) {
+                return 0;
+            }
+        }
 
         int result = 0;
         for (int i = 0; i < s.length(); i++) {
