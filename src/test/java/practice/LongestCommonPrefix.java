@@ -49,6 +49,17 @@ public class LongestCommonPrefix {
                 }
             }
         }
+
+//        for (int i = 0; i < shortestStr.length(); i++) {
+//            char c = shortestStr.charAt(i);
+//            for (int j =0; j < strs.length; j++) {
+//                if (strs[j].charAt(i) != c) {
+////                    return shortestStr.substring(0, i);
+//                    shortestStr = shortestStr.substring(0, i); //flu (0,2)-->0, 1 => fl
+//                }
+//            }
+//        }
+
         return shortestStr;
     }
 }
