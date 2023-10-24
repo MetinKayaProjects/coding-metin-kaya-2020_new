@@ -19,11 +19,11 @@ public class LongestCommonPrefix {
         String[] strArr2 = {"Strong", "Strategy", "Stratosphere"};
         String[] strArr3 = {"abc", "def", "ghi"};
 
-        LongestCommonPrefix result = new LongestCommonPrefix();
+        LongestCommonPrefix result = new LongestCommonPrefix();  // method is not static, so we call it with an object
 
         System.out.println(result.findLongestCommonPrefix(strArr));
-        System.out.println(result.findLongestCommonPrefix(strArr2));
-        System.out.println(result.findLongestCommonPrefix(strArr3));
+//        System.out.println(result.findLongestCommonPrefix(strArr2));
+//        System.out.println(result.findLongestCommonPrefix(strArr3));
     }
 
     private String findLongestCommonPrefix(String[] strs) {
@@ -38,13 +38,14 @@ public class LongestCommonPrefix {
                 shortestStr = s;
             }
         }
+        System.out.println("shortestStr = " + shortestStr);
 
         for (int i = 0; i < shortestStr.length(); i++) {
             char c = shortestStr.charAt(i);
             for (String s : strs) {
                 if (s.charAt(i) != c) {
 //                    return shortestStr.substring(0, i);
-                    shortestStr = shortestStr.substring(0, i);
+                    shortestStr = shortestStr.substring(0, i); //flu (0,2)-->0, 1 => fl
                 }
             }
         }
