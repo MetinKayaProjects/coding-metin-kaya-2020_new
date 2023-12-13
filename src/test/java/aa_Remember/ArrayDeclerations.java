@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class ArrayDeclerations {
     public static void main(String[] args) {
         //ARRAY Decleration
+        //
 
         int[] list1 = new int[4];
         list1[0] = 11;
