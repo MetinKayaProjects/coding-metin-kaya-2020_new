@@ -8,7 +8,7 @@ Given two Strings determine if they are Anagrams -> Are built of the same charac
 
         String a = "listen";
         String b = "silent";
-
+//        System.out.println("isAnagram(a,b) = " + isAnagram1(a, b));
         a = a.toLowerCase().replace(" ", "");
         b = b.toLowerCase().replace(" ", "");
 
@@ -19,7 +19,7 @@ Given two Strings determine if they are Anagrams -> Are built of the same charac
 
         for (int i = 0; i < a.length(); i++) {
 
-            b = b.replaceFirst(a.charAt(i)+ "","");
+            b = b.replaceFirst(a.charAt(i) + "", "");
         }
 
         if (b.isEmpty()) {
@@ -28,7 +28,26 @@ Given two Strings determine if they are Anagrams -> Are built of the same charac
             System.out.println("Not Anagram");
         }
 
-        // print(b.isEmpty() ? "Anagram" : "Not Anagram")
 
     }
+
+//    public static boolean isAnagram1(String a, String b) {
+//        System.out.println("a = " + a);
+//        System.out.println("b = " + b);
+//        String c ="";
+//        if (a.length() != b.length()) {
+//            return false;
+//        }
+//        for (int i = 0; i < a.length(); i++) {
+//            if (a.contains("" + b.charAt(i))) {
+//                c += b.charAt(i);
+//
+//            }
+//        }
+//        System.out.println("a = " + a);
+//        System.out.println("b = " + b);
+//        System.out.println("c = " + c);
+//
+//        return c.equals(b);
+//    }
 }

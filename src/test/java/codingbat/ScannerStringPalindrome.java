@@ -1,7 +1,6 @@
 package codingbat;
 
 import java.util.Scanner;
-
 /*
 1. ask user to type a string in the command line
 2. Take the string , check if it is palindrome

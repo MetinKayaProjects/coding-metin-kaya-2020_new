@@ -12,7 +12,7 @@ output:  [0, 1, 0, 0, 1, 0, 1, 0]
 input :   [1, 1, 1, 0, 1, 1, 1, 1]    //bende ikinci iterasyon hata veriyor
 output    [0, 0, 0, 0, 0, 1, 1, 0]
  */
-public class AmazonDUZELT {
+public class AmazonTODO {
     // METHOD SIGNATURE BEGINS, THIS METHOD IS REQUIRED
     public static int[] cellCompete(int[] states, int days) {
         int[] states2 = new int[states.length];

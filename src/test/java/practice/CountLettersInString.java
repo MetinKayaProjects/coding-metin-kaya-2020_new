@@ -13,14 +13,14 @@ public class CountLettersInString {
 
     private static Map<Character, Integer> countLetters(String str) {
 
-        Map<Character, Integer> letterCounter = new HashMap<>();
+        Map<Character, Integer> letterCounter = new HashMap<>();  //I create a MAP
 
-        str = str.replaceAll(" ", "").trim();
+        str = str.replaceAll(" ", "").trim();  //I remove the spaces in the String value
 
-        for (int i = 0; i < str.length(); i++) {
+        for (int i = 0; i < str.length(); i++) {                //in the for loop I count each letter
 
             if (!letterCounter.containsKey(str.charAt(i))) {
-                letterCounter.put(str.charAt(i), 1); //[j=0] [a=0] [v=0]
+                letterCounter.put(str.charAt(i), 1);
             } else {
                 letterCounter.put(str.charAt(i), letterCounter.get(str.charAt(i)) + 1);
             }

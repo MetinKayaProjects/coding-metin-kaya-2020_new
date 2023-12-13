@@ -36,7 +36,7 @@ public class Anagram_forLoop {
         System.out.println("c = " + c);
         System.out.println("a = " + a);
 
-        return (a.equalsIgnoreCase(c)) ? true : false;
+        return a.equalsIgnoreCase(c);
 
     }
 }

@@ -13,6 +13,7 @@ public class Amstrong {
 
         System.out.println("This num isAmstrong? " + isAmstrong(153));
 
+
     }
     public static boolean isAmstrong(int num){
         String number = String.valueOf(num);
@@ -22,9 +23,18 @@ public class Amstrong {
         for (int i=0; i<number.length(); i++){
 
                sum += Math.pow(Integer.parseInt(""+ number.charAt(i)),power);
+//               sum += power(Integer.parseInt(""+number.charAt(i)), power);
 
         }
 
         return sum == num;
     }
+//    static int power(int num, int length){
+//        int pow = 1;
+//        for (int i = 0; i < length; i++) {//153
+//            pow = pow * num;
+//        }
+////        System.out.println("pow = " + pow);
+//        return pow;
+//    }
 }
