@@ -1,4 +1,4 @@
-package functional_interface_and_lambda_expression;
+package lambda_expression;
 
 import java.util.ArrayList;
 import java.util.List;
